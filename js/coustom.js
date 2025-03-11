@@ -1,3 +1,37 @@
+// timer script end
+function formatTime(time) {
+    return time < 10 ? '0' + time : time;
+}
+
+function startCountdown() {
+    const countdownElement = document.getElementById("countdown");
+    let targetTime = new Date().getTime() + (1 * 24 * 60 * 60 * 1000) + (2 * 60 * 60 * 1000) + (30 * 60 * 1000) + (45 * 1000);
+    const savedTime = localStorage.getItem("countdownTarget");
+    if (savedTime) {
+        targetTime = parseInt(savedTime);
+    }
+
+    const interval = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = targetTime - now;
+
+        if (distance < 0) {
+            clearInterval(interval);
+            countdownElement.textContent = "EXPIRED";
+        } else {
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            countdownElement.textContent = `${formatTime(days)}:${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
+            localStorage.setItem("countdownTarget", targetTime);
+        }
+    }, 1000);
+}
+startCountdown();
+// timer script end
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggler = document.getElementById("menu-toggler");
     const menuBar = document.getElementById("menubar");
@@ -46,8 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-
 
 window.addEventListener("scroll", function () {
     if (window.scrollY > 0) {

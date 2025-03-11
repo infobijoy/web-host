@@ -55,28 +55,27 @@
 
 <style>
     .active > .page-link, .page-link.active {
-    z-index: 3;
-    color: var(--bs-pagination-active-color);
-    background-color: #673de6; /* Purple theme */
-    border-color: #673de6;
-}
+        z-index: 3;
+        color: var(--bs-pagination-active-color);
+        background-color: #ff944d;
+        border-color: #ff944d;
+    }
 
-.pagination {
-    --bs-pagination-hover-color: #fff;
-    --bs-pagination-hover-bg: #4a18e0; /* Darker purple for hover */
-    --bs-pagination-hover-border-color: var(--bs-border-color);
-    --bs-pagination-focus-color: #ffffff;
-    --bs-pagination-focus-bg: #5a27e6; /* Slightly lighter purple */
-    --bs-pagination-focus-box-shadow: none;
-    --bs-pagination-active-color: #fff;
-    /*--bs-pagination-border-color: #673de6;*/
-    margin-top: 10px;
-}
+    .pagination {
+        --bs-pagination-hover-color: #fff;
+        --bs-pagination-hover-bg: #ff944d;
+        --bs-pagination-hover-border-color: var(--bs-border-color);
+        --bs-pagination-focus-color: #000000;
+        --bs-pagination-focus-bg: var(--bs-secondary-bg);
+        --bs-pagination-focus-box-shadow: none;
+        --bs-pagination-active-color: #fff;
+        /*--bs-pagination-border-color: #ff944d;*/
+        margin-top: 10px;
+    }
 
-.page-link {
-    color: #212529;
-}
-
+    .page-link {
+        color: #212529;
+    }
 </style>
 <?php include('footer.php'); ?>
 
@@ -111,7 +110,7 @@
                 const endPage = Math.min(response.total_pages, startPage + maxVisiblePages - 1);
 
                 if (response.current_page > 1) {
-                    paginationLinks += `<li class="page-item"><a class="page-link" href="#" style="color:#ffffff; background:#673de6;" data-page="${response.current_page - 1}">&laquo; </a></li>`;
+                    paginationLinks += `<li class="page-item"><a class="page-link" href="#" style="color:#ffffff; background:#ff944d;" data-page="${response.current_page - 1}">&laquo; </a></li>`;
                 }
 
                 for (let i = startPage; i <= endPage; i++) {
@@ -123,7 +122,7 @@
                 }
 
                 if (response.current_page < response.total_pages) {
-                    paginationLinks += `<li class="page-item"><a class="page-link" href="#" style="color:#ffffff; background:#673de6;" data-page="${response.current_page + 1}"> &raquo;</a></li>`;
+                    paginationLinks += `<li class="page-item"><a class="page-link" href="#" style="color:#ffffff; background:#ff944d;" data-page="${response.current_page + 1}"> &raquo;</a></li>`;
                 }
 
                 $('#pagination').html(paginationLinks);

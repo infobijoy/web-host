@@ -34,7 +34,7 @@
 <meta property="twitter:image" content="images/jetwebhost_og_image.png">
 
  <!--Favicons -->
-<link href="images/favicon.png" rel="icon">
+<link href="image/favicon.png" rel="icon">
 
  <!--Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,11 +48,10 @@
 
 <body>
    <!--Header Start -->
-
-<header class="sticky-top">
+<header class="sticky-top ">
         <nav class="navbar navbar-expand">
           <div class="container-xl">
-            <a class="navbar-brand" href="/"><img height="65" width="170" src="https://my.jetwebhost.com/templates/lagom2/assets/img/logo/logo_big.1825963853.svg" alt="jetwebhost.com"></a>
+            <a class="navbar-brand" href="/"><img height="75" width="170" src="image/logo.svg" alt="jetwebhost.com"></a>
     
             <ul class="navbar-nav" id="menubar">
               <li class="nav-item header d-lg-none">
@@ -64,7 +63,7 @@
                 <span class="close-mobile-menu"><svg width="24" height="24"><symbol id="svg-close" viewBox="0 0 50 50"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path></symbol><use xlink:href="#svg-close"></use></svg></span>
               </li>
 
-              <li class="nav-item dropdown dropdown-wide marging-solve">
+              <li class="nav-item dropdown dropdown-wide">
                 <a class="nav-link toggle" href="#">Domains</a>
                 <div class="dropdown-menu with-headers">
                   <div class="container-xl">

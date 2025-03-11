@@ -1164,7 +1164,11 @@ header nav {
   box-shadow: none;
   transition: background 0.3s, box-shadow 0.3s;
 }
-
+@media (max-width: 500px) {
+  .custom-full-width-mobile {
+    width: 100% !important;
+  }
+}
 .scrolled header nav {
   background: #fff;
   box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.08);
@@ -1203,12 +1207,4 @@ header nav {
 * {
   scrollbar-width: thin;
   scrollbar-color: #673de6 #f1f1f1;
-}
-.banner.one {
-  background: linear-gradient(
-    266deg,
-    #673de67a,
-    #b89cff 45.83%,
-    #e0d6ff57
-  ) !important;
 }

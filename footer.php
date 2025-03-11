@@ -59,17 +59,11 @@
       </div>
     </div>
 
-
-    <div class="row my-3 my-lg-5">
-      <div class="col-12">
-        <hr class="border-white my-0">
-      </div>
-    </div>
     <div class="row align-items-center justify-content-between gy-4 gy-lg-0">
       <div class="col-lg-4 col-12">
         <div class="footer-info">
-          <a href="https://jetwebhost.com" class="logo">
-            <img src="images/logo_white.svg" alt="logo | JetWebHost">
+          <a href="/" class="logo">
+            <img src="image/logo.svg" alt="logo | JetWebHost">
           </a>
           <p>We offer a wide range of reliable hosting solutions tailored to meet your specific needs, ensuring a seamless online experience for your website visitors.</p>
         </div>
@@ -83,7 +77,6 @@
             <a href="javascript:void(0)"><i class="ri-youtube-fill"></i></a>
             <a href="javascript:void(0)"><i class="ri-linkedin-fill"></i></a>
           </div>
-          <img class="mt-2" src="images/payment_info.png" alt="Payment | JetWebHost">
         </div>
       </div>
     </div>
