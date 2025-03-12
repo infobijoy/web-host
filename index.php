@@ -1,8 +1,5 @@
 <?php include('header.php'); ?>
 <!-- Hero Banner Start -->
-<?php 
-include "./search-domain.php";
-?>
 <div class="banner one">
     <div class="container">
         <div class="row align-items-center">
@@ -28,8 +25,11 @@ include "./search-domain.php";
         </div>
     </div>
 </div> <!-- Hero Banner End -->
-
-
+<!-- Search Domain start-->
+<?php 
+include "./search-domain.php";
+?>
+<!-- Search Domain End -->
 <main>
   <!-- Homepage Plan Section Start -->
   <section class="section-gap" id="Plans">
@@ -124,7 +124,6 @@ include "./search-domain.php";
     </div>
   </section>
   <!-- Homepage Plan Section End -->
-
 <!-- Home Page Features Section Start -->
 <section class="section-gap">
     <div class="container">
